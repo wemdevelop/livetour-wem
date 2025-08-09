@@ -1,0 +1,46 @@
+/* Navbar.css */
+
+/* Font import using @font-face */
+@font-face {
+  font-family: 'Zoho Puvi';
+  src: url('/fonts/ZohoPuvi-Regular.woff2') format('woff2'),
+       url('/fonts/ZohoPuvi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* 👈 improves performance */
+}
+
+/* Common font styling */
+.custom-nav-font {
+  font-family: 'Zoho Puvi', 'Open Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+
+/* Mobile menu icon styles */
+@media only screen and (max-width: 767px) {
+  .mobile-menu-icon1 {
+    background: #000;
+    text-indent: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: 'Zoho Puvi', sans-serif;
+    color: #fff; /* Optional: ensure icon is visible */
+  }
+}

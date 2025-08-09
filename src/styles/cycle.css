@@ -1,0 +1,96 @@
+.order-cycle-container {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background-color: #fef0da;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.order-cycle-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.center-small {
+  color: red;
+  font-style: italic;
+}
+
+.center-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.step {
+  position: absolute;
+  width: 120px;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 8px auto;
+}
+
+.step-label {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in forwards;
+}
+
+/* Delays */
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1000 { animation-delay: 1s; }
+.delay-1200 { animation-delay: 1.2s; }
+
+/* Manual Positioning (Tailwind-like) */
+.top-20 { top: 20px; }
+.left-1\/2 { left: 50%; }
+.right-\[20px\] { right: 20px; }
+.right-\[30px\] { right: 30px; }
+.left-\[30px\] { left: 30px; }
+.left-\[20px\] { left: 20px; }
+.top-\[160px\] { top: 160px; }
+.top-\[380px\] { top: 380px; }
+.bottom-\[120px\] { bottom: 120px; }
+
+.transform { transform: translateX(-50%); }

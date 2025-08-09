@@ -1,0 +1,28 @@
+blur-image {
+    position: absolute;
+    bottom: -79px;
+    right: -140px;
+    width: 40vh;
+    padding-left: 61px;
+}
+.blur-image img{
+
+   position: relative;
+    max-width: 148%;
+    height: 44vh;
+    right: -68px;
+    bottom: -79px;
+
+
+}
+/* .bg-amber-900 {
+    background-color: var(--color-amber-900);
+    width: 40vh;
+}
+bg-amber-900 {
+    background-color: var(--color-amber-900);
+    width: 40vh;
+    right: -151px;
+    top: 172px;
+    bottom: 0px;
+} */

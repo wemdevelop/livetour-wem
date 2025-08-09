@@ -1,0 +1,280 @@
+.careers-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.thrive-section {
+  background-color: #e85a4f;
+  border-radius: 8px;
+  padding: 60px 40px;
+  margin-top: 40px;
+}
+
+.thrive-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.thrive-text {
+  flex: 1;
+  color: white;
+}
+
+.thrive-hashtag {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.thrive-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hashtags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.hashtag {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.separator {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.discover-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.discover-btn:hover {
+  background-color: white;
+  color: #e85a4f;
+}
+
+.employee-collage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(4, 80px);
+  gap: 8px;
+  position: relative;
+}
+
+.employee-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease;
+}
+
+.employee-photo:hover {
+  transform: scale(1.05);
+}
+
+.blue-square {
+  width: 80px;
+  height: 80px;
+  background-color: #4a90e2;
+  border-radius: 8px;
+}
+
+.photo-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.square-1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.photo-2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.photo-3 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.photo-4 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.square-2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.photo-5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.square-3 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.photo-6 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.photo-7 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.square-4 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.photo-8 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.photo-9 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .thrive-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .thrive-hashtag {
+    font-size: 2rem;
+  }
+
+  .thrive-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hashtags {
+    justify-content: center;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    gap: 6px;
+  }
+
+  .employee-photo,
+  .blue-square {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .thrive-section {
+    padding: 40px 20px;
+  }
+
+  .thrive-hashtag {
+    font-size: 1.5rem;
+  }
+
+  .hashtags {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, 60px);
+    grid-template-rows: repeat(2, 60px);
+  }
+
+  .employee-photo,
+  .blue-square {
+    width: 60px;
+    height: 60px;
+  }
+}

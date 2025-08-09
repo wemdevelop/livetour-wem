@@ -1,0 +1,24 @@
+.clip-hero {
+  clip-path: polygon(0 0, 65% 0, 40% 100%, 0% 100%);
+}
+.hero-background {
+  background-color: #fae1b6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Show background image only on medium screens and larger */
+@media (min-width: 768px) {
+  .hero-background {
+    background-image: url('/src/assets/group-young-people-are-looking-map-where-they-are-while-walking-autumn-forest.jpg');
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 767px) {
+  .hero-background {
+    background-image: none;
+    background-color: #fae1b6;
+  }
+}

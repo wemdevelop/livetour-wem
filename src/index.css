@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+ * Tailwind utility applied via @apply * 
+.nav-main-col {
+  @apply w-full max-w-full bg-red-500;
+}
+
+ * Custom font-family applied to body * 
+body {
+  font-family: "Google Sans Display", Arial, Helvetica, sans-serif;
+}
+*{
+  @apply !font-sans;
+}
+ * Google Sans Display font-face for local hosting */
+/* @font-face {
+  font-family: "Google Sans Display";
+  src: url("/fonts/GoogleSansDisplay-Regular.woff2") format("woff2"),
+    url("/fonts/GoogleSansDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* Section padding for large screens */
+.section_p {
+  @apply lg:p-11 lg:pb-28;
+}
+
+/* Reusable heading style */
+.col-heading {
+  @apply text-[28px] font-bold text-gray-900 mb-2;
+}
+
+/* Uncomment for debugging layout with visible borders */
+/*
+* {
+  border: 1px solid black;
+}
+*/
+
+/* ✅ Optional: Additional font weights for Google Sans Display */
+/* index.css */
+
+@font-face {
+  font-family: "Google Sans Display";
+  src: url("/fonts/GoogleSansDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply the font globally to headings and text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Google Sans Display", sans-serif;
+}
+
+body {
+  font-family: "Google Sans Display", sans-serif;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+/* *{
+  border: 1px solid black;
+} */
+
+h1 {
+  @apply text-6xl;
+}
+h2 {
+  @apply text-3xl lg:text-5xl  lg:leading-14;
+} 
+h3 {
+  @apply text-3xl lg:text-4xl
+}
+h4 {
+  @apply text-lg  font-semibold lg:font-normal lg:text-2xl
+}
+h5 {
+  @apply text-xl
+}
+h6 {
+  @apply text-lg
+}
+
+
+.banner_inner_text{
+  @apply text-sm md:text-base font-light text-white mt-4 my-6
+}
+
+
+
+
+
+
+.caption_text{
+  @apply text-base font-semibold text-gray-700;
+}
+
+
+
+
+/* input  */
+.custom-input {
+  @apply bg-transparent h-10 w-full rounded-xl text-black placeholder-transparent ring-1 px-2 ring-gray-500 focus:ring-sky-600 focus:outline-none focus:border-rose-600;
+}
+
+.custom-label {
+  @apply absolute bg-white cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 transition-all
+         peer-placeholder-shown:text-base
+         peer-placeholder-shown:text-gray-500
+         peer-placeholder-shown:top-2
+         peer-focus:-top-3
+         peer-focus:text-sky-600
+         peer-focus:bg-white
+         peer-focus:text-sm;
+}
+.lt_v1_num_input.custom-input {
+  @apply bg-transparent h-10 w-full rounded-xl text-black placeholder-transparent ring-1  px-2 ring-gray-500 focus:ring-sky-600 focus:outline-none focus:border-rose-600;
+}
+
+.lt_v1_num_input.custom-label {
+  @apply absolute cursor-text left-10 bg-white text-sm text-gray-500  mx-1 px-1 transition-all
+         /* peer-placeholder-shown:text-base */
+         peer-placeholder-shown:text-gray-500
+         peer-placeholder-shown:-top-2.5
+         peer-placeholder-shown:text-sm
+         peer-focus:-top-3
+         active:left-0
+         peer-focus:text-sky-600
+         peer-focus:left-0
+         peer-focus:bg-white
+         peer-placeholder-shown:left-0
+         peer-focus:text-sm;
+}
+
+/* buttons  */
+.btn-primary {
+  @apply bg-black p-3 text-white font-semibold rounded-3xl cursor-pointer;
+}
+.btn-aut-outline {
+  @apply p-2.5 border rounded-full border-gray-300 hover:border-orange-900 cursor-pointer transition-all duration-300;
+}
+.btn-ft-outline{
+  @apply w-full p-3.5 text-xs font-semibold outline rounded-3xl outline-gray-500 hover:bg-red-600 hover:outline-red-600 transition-all duration-300 cursor-pointer;
+}
+.btn-icon-hover-red{
+  @apply flex items-center hover:gap-2 gap-1 bg-red-600 p-3.5 rounded-full px-8 text-white cursor-pointer  text-sm lg:text-base font-semibold transition-all duration-300 hover:bg-black;
+}
+.btn-icon-hover-black{
+  @apply flex items-center hover:gap-2 gap-1 bg-black p-3.5 rounded-full px-8 text-white cursor-pointer text-sm lg:text-base font-semibold transition-all duration-300 hover:bg-red-600 ;
+}
+.btn-white-outline{
+  @apply px-8 py-4 border border-white rounded-full transition-all duration-300 hover:bg-white hover:text-black cursor-pointer font-semibold  
+}
+.btn-icon-hover-pricing{
+  @apply flex items-center hover:gap-2 gap-1 bg-red-600 p-3.5 rounded-full px-8 text-white cursor-pointer  text-sm lg:text-base font-semibold transition-all duration-300 hover:bg-red-700;
+}
+
+
+
+
+
+/* div inner classes  */
+.lt_v1_outline_bl_rd{
+  @apply  py-3 px-6 text-sm font-normal border rounded-full border-gray-500 hover:border-red-600 hover:text-red-600 transition-all duration-300;
+}

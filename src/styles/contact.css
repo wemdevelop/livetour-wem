@@ -1,0 +1,140 @@
+/* Typography */
+.main-title{
+    font-size: 48px;
+    font-weight: 600;
+}
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.section-description {
+  font-size: 18px;
+}
+
+/* Layout */
+.top-banner {
+  height: 276px;
+  background-color: #fae1b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.contact-info {
+  font-size: 16px;
+
+}
+.location-block p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Buttons */
+.contact-button {
+  background-color: #e02424;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4rem;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.contact-button:hover {
+  background-color: #c81e1e;
+}
+
+.submit-button {
+  background-color: #e02424;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+.submit-button:hover {
+  background-color: #c81e1e;
+}
+
+/* Cards */
+.card-block {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Modal */
+.modal-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #888;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Form */
+.form-field {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+}
+.link-highlight {
+  color: #16a34a;
+  text-decoration: underline;
+}
+.btn-7 {
+  background: linear-gradient(to right, #dc2626, #7f1d1d); /* red-600 to red-800 */
+  transition: color 0.3s ease;
+}
+
+.btn-7:hover {
+  color: #ffe4e6; /* slightly lighter tint on hover */
+}
+
+/* before and after layers */
+.btn-7-before,
+.btn-7-after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: height 0.3s ease;
+  z-index: 0;
+}
+
+.btn-7-before {
+  left: 25%;
+}
+
+.btn-7-after {
+  left: 75%;
+}
+
+/* Expand bars on hover */
+.btn-7:hover .btn-7-before,
+.btn-7:hover .btn-7-after {
+  height: 100%;
+}

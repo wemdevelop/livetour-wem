@@ -1,0 +1,50 @@
+// src/data/pricingPlansData.js
+export const pricingPlans = [
+  {
+    title: 'Billed Quarterly',
+    price: '₹2750',
+    subText: 'User/Month',
+    features: [
+      'All core features',
+      '3 user accounts',
+      'Basic reporting',
+      'Lead tracking',
+      'Email integration',
+    ],
+    animationDelay: 0.3,
+    strikePrice: null,
+  },
+  {
+    title: 'Half Yearly Plan',
+    price: '₹2000',
+    subText: '/user/month',
+    features: [
+      'All Quarterly features',
+      'Priority support',
+      'Advanced reporting',
+      'Team collaboration tools',
+      'Task automation',
+      'Export reports to Excel',
+    ],
+    animationDelay: 0.6,
+    strikePrice: '₹900',
+  },
+  {
+    title: 'Annual Plan',
+    price: '₹2500',
+    subText: '/user/month billed every 6 month',
+    features: [
+      'All Half Yearly features',
+      'Unlimited pipelines',
+      'Dedicated account manager',
+      'Custom branding options',
+      'AI-powered analytics',
+      'Multi-language support',
+      'Workflow automation',
+      'Role-based access control',
+      'Email & SMS integrations',
+    ],
+    animationDelay: 0.9,
+    strikePrice: '₹550',
+  },
+];

@@ -1,0 +1,21 @@
+.shadow-right {
+  box-shadow: 4px 0 6px -1px rgba(0, 0, 0, 0.1);
+}
+.ftrs-cmn-con {
+    margin-bottom: 0px;
+    padding: 0 30px 0 65px;
+    box-sizing: border-box;
+    max-width: 1120px;
+    width: 100%;
+}
+.scroll-mt-24{
+  margin-bottom: 0px !important;
+}
+ .automation {
+    padding: 0px 30px 75px 65px;
+
+    max-width: unset;
+    color: #fff;
+    /* margin-bottom: 120px; */
+}
+

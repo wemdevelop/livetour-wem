@@ -1,0 +1,25 @@
+@keyframes scrollLeftToRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollRightToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-left-to-right {
+  animation: scrollLeftToRight 30s linear infinite;
+}
+
+.scroll-right-to-left {
+  animation: scrollRightToLeft 30s linear infinite;
+}
